@@ -1,0 +1,20 @@
+C:\Users\Markus\source\repos\Text Summarizer\bin\Debug\Text Summarizer.exe.config
+C:\Users\Markus\source\repos\Text Summarizer\bin\Debug\Text Summarizer.exe
+C:\Users\Markus\source\repos\Text Summarizer\bin\Debug\Text Summarizer.pdb
+C:\Users\Markus\source\repos\Text Summarizer\obj\Debug\Text Summarizer.csprojAssemblyReference.cache
+C:\Users\Markus\source\repos\Text Summarizer\obj\Debug\Text_Summarizer.Form1.resources
+C:\Users\Markus\source\repos\Text Summarizer\obj\Debug\Text_Summarizer.Properties.Resources.resources
+C:\Users\Markus\source\repos\Text Summarizer\obj\Debug\Text Summarizer.csproj.GenerateResource.cache
+C:\Users\Markus\source\repos\Text Summarizer\obj\Debug\Text Summarizer.csproj.CoreCompileInputs.cache
+C:\Users\Markus\source\repos\Text Summarizer\obj\Debug\Text Summarizer.exe
+C:\Users\Markus\source\repos\Text Summarizer\obj\Debug\Text Summarizer.pdb
+C:\Users\Markus\Documents\_College\SI\Proyecto Final\Visual\Text Summarizer\bin\Debug\Text Summarizer.exe.config
+C:\Users\Markus\Documents\_College\SI\Proyecto Final\Visual\Text Summarizer\bin\Debug\Text Summarizer.exe
+C:\Users\Markus\Documents\_College\SI\Proyecto Final\Visual\Text Summarizer\bin\Debug\Text Summarizer.pdb
+C:\Users\Markus\Documents\_College\SI\Proyecto Final\Visual\Text Summarizer\obj\Debug\Text Summarizer.csprojAssemblyReference.cache
+C:\Users\Markus\Documents\_College\SI\Proyecto Final\Visual\Text Summarizer\obj\Debug\Text_Summarizer.Form1.resources
+C:\Users\Markus\Documents\_College\SI\Proyecto Final\Visual\Text Summarizer\obj\Debug\Text_Summarizer.Properties.Resources.resources
+C:\Users\Markus\Documents\_College\SI\Proyecto Final\Visual\Text Summarizer\obj\Debug\Text Summarizer.csproj.GenerateResource.cache
+C:\Users\Markus\Documents\_College\SI\Proyecto Final\Visual\Text Summarizer\obj\Debug\Text Summarizer.csproj.CoreCompileInputs.cache
+C:\Users\Markus\Documents\_College\SI\Proyecto Final\Visual\Text Summarizer\obj\Debug\Text Summarizer.exe
+C:\Users\Markus\Documents\_College\SI\Proyecto Final\Visual\Text Summarizer\obj\Debug\Text Summarizer.pdb

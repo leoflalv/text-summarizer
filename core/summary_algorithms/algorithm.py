@@ -1,3 +1,3 @@
 class SummaryAlgorithm:
-    def summary(text, max_length):
+    def summary(self, text, max_length):
         pass
