@@ -34,17 +34,17 @@
             this.comboBox_tech = new System.Windows.Forms.ComboBox();
             this.label_tech = new System.Windows.Forms.Label();
             this.groupBox_to_summ = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.numericUpDown_word_count = new System.Windows.Forms.NumericUpDown();
+            this.button_buscar_directorio = new System.Windows.Forms.Button();
             this.groupBox_summ = new System.Windows.Forms.GroupBox();
+            this.button_save_summ = new System.Windows.Forms.Button();
             this.textBox_summ = new System.Windows.Forms.TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.button_buscar_directorio = new System.Windows.Forms.Button();
-            this.button_save_summ = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.numericUpDown_word_count = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox_to_summ.SuspendLayout();
-            this.groupBox_summ.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_word_count)).BeginInit();
+            this.groupBox_summ.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox_to_summ
@@ -75,7 +75,8 @@
             this.comboBox_tech.FormattingEnabled = true;
             this.comboBox_tech.Items.AddRange(new object[] {
             "gensim",
-            "frequency-driven"});
+            "frequency-driven",
+            "LSA"});
             this.comboBox_tech.Location = new System.Drawing.Point(9, 487);
             this.comboBox_tech.Name = "comboBox_tech";
             this.comboBox_tech.Size = new System.Drawing.Size(127, 25);
@@ -108,65 +109,15 @@
             this.groupBox_to_summ.TabStop = false;
             this.groupBox_to_summ.Text = "Text to summarize";
             // 
-            // groupBox_summ
+            // label1
             // 
-            this.groupBox_summ.Controls.Add(this.button_save_summ);
-            this.groupBox_summ.Controls.Add(this.textBox_summ);
-            this.groupBox_summ.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox_summ.Location = new System.Drawing.Point(405, 2);
-            this.groupBox_summ.Name = "groupBox_summ";
-            this.groupBox_summ.Size = new System.Drawing.Size(454, 517);
-            this.groupBox_summ.TabIndex = 7;
-            this.groupBox_summ.TabStop = false;
-            this.groupBox_summ.Text = "Summarized text";
-            // 
-            // textBox_summ
-            // 
-            this.textBox_summ.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_summ.Location = new System.Drawing.Point(6, 21);
-            this.textBox_summ.Multiline = true;
-            this.textBox_summ.Name = "textBox_summ";
-            this.textBox_summ.ReadOnly = true;
-            this.textBox_summ.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox_summ.Size = new System.Drawing.Size(441, 488);
-            this.textBox_summ.TabIndex = 0;
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.Filter = "Text Files|*.txt";
-            // 
-            // button_buscar_directorio
-            // 
-            this.button_buscar_directorio.BackColor = System.Drawing.SystemColors.Control;
-            this.button_buscar_directorio.FlatAppearance.BorderSize = 0;
-            this.button_buscar_directorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_buscar_directorio.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_buscar_directorio.Image = ((System.Drawing.Image)(resources.GetObject("button_buscar_directorio.Image")));
-            this.button_buscar_directorio.Location = new System.Drawing.Point(370, 0);
-            this.button_buscar_directorio.Name = "button_buscar_directorio";
-            this.button_buscar_directorio.Size = new System.Drawing.Size(20, 20);
-            this.button_buscar_directorio.TabIndex = 6;
-            this.button_buscar_directorio.UseVisualStyleBackColor = false;
-            this.button_buscar_directorio.Click += new System.EventHandler(this.Button_browse_file_Click);
-            // 
-            // button_save_summ
-            // 
-            this.button_save_summ.BackColor = System.Drawing.SystemColors.Control;
-            this.button_save_summ.FlatAppearance.BorderSize = 0;
-            this.button_save_summ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_save_summ.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_save_summ.Image = ((System.Drawing.Image)(resources.GetObject("button_save_summ.Image")));
-            this.button_save_summ.Location = new System.Drawing.Point(427, 0);
-            this.button_save_summ.Name = "button_save_summ";
-            this.button_save_summ.Size = new System.Drawing.Size(20, 20);
-            this.button_save_summ.TabIndex = 7;
-            this.button_save_summ.UseVisualStyleBackColor = false;
-            this.button_save_summ.Click += new System.EventHandler(this.Button_save_summ_Click);
-            // 
-            // saveFileDialog1
-            // 
-            this.saveFileDialog1.DefaultExt = "txt";
-            this.saveFileDialog1.Filter = "Text File|*.txt";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(161, 469);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(85, 17);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Word count:";
             // 
             // numericUpDown_word_count
             // 
@@ -191,15 +142,65 @@
             0,
             0});
             // 
-            // label1
+            // button_buscar_directorio
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(161, 469);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 17);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Word count:";
+            this.button_buscar_directorio.BackColor = System.Drawing.SystemColors.Control;
+            this.button_buscar_directorio.FlatAppearance.BorderSize = 0;
+            this.button_buscar_directorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_buscar_directorio.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_buscar_directorio.Image = ((System.Drawing.Image)(resources.GetObject("button_buscar_directorio.Image")));
+            this.button_buscar_directorio.Location = new System.Drawing.Point(370, 0);
+            this.button_buscar_directorio.Name = "button_buscar_directorio";
+            this.button_buscar_directorio.Size = new System.Drawing.Size(20, 20);
+            this.button_buscar_directorio.TabIndex = 6;
+            this.button_buscar_directorio.UseVisualStyleBackColor = false;
+            this.button_buscar_directorio.Click += new System.EventHandler(this.Button_browse_file_Click);
+            // 
+            // groupBox_summ
+            // 
+            this.groupBox_summ.Controls.Add(this.button_save_summ);
+            this.groupBox_summ.Controls.Add(this.textBox_summ);
+            this.groupBox_summ.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox_summ.Location = new System.Drawing.Point(405, 2);
+            this.groupBox_summ.Name = "groupBox_summ";
+            this.groupBox_summ.Size = new System.Drawing.Size(454, 517);
+            this.groupBox_summ.TabIndex = 7;
+            this.groupBox_summ.TabStop = false;
+            this.groupBox_summ.Text = "Summarized text";
+            // 
+            // button_save_summ
+            // 
+            this.button_save_summ.BackColor = System.Drawing.SystemColors.Control;
+            this.button_save_summ.FlatAppearance.BorderSize = 0;
+            this.button_save_summ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_save_summ.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_save_summ.Image = ((System.Drawing.Image)(resources.GetObject("button_save_summ.Image")));
+            this.button_save_summ.Location = new System.Drawing.Point(427, 0);
+            this.button_save_summ.Name = "button_save_summ";
+            this.button_save_summ.Size = new System.Drawing.Size(20, 20);
+            this.button_save_summ.TabIndex = 7;
+            this.button_save_summ.UseVisualStyleBackColor = false;
+            this.button_save_summ.Click += new System.EventHandler(this.Button_save_summ_Click);
+            // 
+            // textBox_summ
+            // 
+            this.textBox_summ.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_summ.Location = new System.Drawing.Point(6, 21);
+            this.textBox_summ.Multiline = true;
+            this.textBox_summ.Name = "textBox_summ";
+            this.textBox_summ.ReadOnly = true;
+            this.textBox_summ.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox_summ.Size = new System.Drawing.Size(441, 488);
+            this.textBox_summ.TabIndex = 0;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.Filter = "Text Files|*.txt";
+            // 
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.DefaultExt = "txt";
+            this.saveFileDialog1.Filter = "Text File|*.txt";
             // 
             // Form1
             // 
@@ -215,9 +216,9 @@
             this.Text = "Text Summarizer";
             this.groupBox_to_summ.ResumeLayout(false);
             this.groupBox_to_summ.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_word_count)).EndInit();
             this.groupBox_summ.ResumeLayout(false);
             this.groupBox_summ.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_word_count)).EndInit();
             this.ResumeLayout(false);
 
         }
