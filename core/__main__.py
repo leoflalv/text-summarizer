@@ -2,11 +2,16 @@ import json
 import os
 from summary_algorithms.gensim_tech import GensimSummarizer
 from summary_algorithms.frequency_driven import FrequencyDrivenAlgorithm
+from summary_algorithms.latent_semantic import LatentSemanticAlgorithm
 from utils.manager import SummaryManager
 
 
 def main():
-    dic = {'gensim': GensimSummarizer(), 'frequency-driven': FrequencyDrivenAlgorithm(SummaryManager())}
+    dic = {
+        'gensim': GensimSummarizer(), 
+        'frequency-driven': FrequencyDrivenAlgorithm(SummaryManager()),
+        'LSA': LatentSemanticAlgorithm(SummaryManager())
+    }
 
     input_data = read_input()
     technique = input_data['parameters']['technique']
